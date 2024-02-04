@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: linear-gradient(rgba(0, 0, 50, 0.8));
+  background-image: url(images/star-citizen.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff9b;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: rgb(1, 1, 50);
+  position: relative;
+}
+.form-box h1::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: rgb(1, 1, 50);
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.input-field {
+  background: #aeaeae;
+  margin: 15px 0;
+  display: flex;
+  border-radius: 3px;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+input {
+  padding: 20px 17px;
+  width: 100%;
+  background: rgb(219, 219, 219);
+  border: 0;
+  outline: 0;
+}
+.input-field i {
+  margin-left: 15px;
+  color: rgb(98, 98, 173);
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+form p {
+  text-align: left;
+  font-size: 13px;
+}
+form p a {
+  text-decoration: none;
+  color: rgb(255, 30, 67);
+}
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-field button {
+  flex-basis: 48%;
+  background: #0e20e8;
+  color: white;
+  height: 40px;
+  border-radius: 20px;
+  border-radius: 20px;
+  border: 0;
+  outline: 1px solid;
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: background 1s;
+}
+.input-group {
+  height: 260px;
+}
+.btn-field button.disable {
+  background: #aeaeae;
+  color: #555;
+}
